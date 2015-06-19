@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    PDFMaker.go
+    PdfMaker.create
   end
 end
