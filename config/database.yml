@@ -81,8 +81,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: pdflib_app_production
-  username: pdflib_app
-  password: <%= ENV['PDFLIB_APP_DATABASE_PASSWORD'] %>
