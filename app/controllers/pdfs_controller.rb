@@ -6,7 +6,7 @@ class PdfsController < ApplicationController
   end
   def create
     answer = PdfMaker.create(params[:pdf][:name])
-    redirect_to index
+    redirect_to root_path
   end
   private
 end
