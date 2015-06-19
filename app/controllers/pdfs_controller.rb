@@ -5,8 +5,8 @@ class PdfsController < ApplicationController
     @pdf = Pdf.new
   end
   def create
-    PdfMaker.create(params[:pdf][:name])
-    redirect_to pdfs_path
+    answer = PdfMaker.create(params[:pdf][:name])
+    redirect_to index
   end
   private
 end

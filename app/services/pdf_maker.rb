@@ -62,5 +62,6 @@ class PdfMaker
     end
 
     p.end_document('')
+    image_path(File.basename(outfile))
   end
 end
