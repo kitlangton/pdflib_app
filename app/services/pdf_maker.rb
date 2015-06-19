@@ -1,5 +1,3 @@
-require_relative 'PDFlib'
-require 'PDFlib'
 require 'pdflib_wrapper'
 
 class PdfMaker
