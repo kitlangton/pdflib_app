@@ -1,11 +1,13 @@
 require 'pdflib_wrapper'
 
 class PdfMaker
+  extend ActionView::Helpers
+  extend Rails.application.routes.url_helpers
   def self.create(name)
-    pdffile = 'test.pdf'
+    p pdffile = "app/assets/images" + asset_path("test.pdf").to_s
     exitcode = 0
-    searchpath = 'app/assets/images/'
-    outfile = 'app/assets/images/stamp_pages.pdf'
+    p searchpath = File.dirname(pdffile).to_s
+    p outfile =  searchpath + "/stamp_pages.pdf"
     title = 'Stamp Pages'
 
     puts 'yo'
