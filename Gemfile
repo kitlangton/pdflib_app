@@ -19,6 +19,7 @@ gem 'figaro'
 gem 'slim-rails'
 gem 'pdflib_wrapper'
 gem 'simple_form'
+gem 'aws-sdk'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'

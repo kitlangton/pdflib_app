@@ -7,7 +7,7 @@ class PdfMaker
     p pdffile = "app/assets/images" + asset_path("test.pdf").to_s
     exitcode = 0
     p searchpath = File.dirname(pdffile).to_s
-    p outfile = "public/assets/stamp_pages.pdf"
+    p outfile = Rails.root.join('tmp/stamp_pages.pdf').to_s
     title = 'Stamp Pages'
 
     puts 'yo'

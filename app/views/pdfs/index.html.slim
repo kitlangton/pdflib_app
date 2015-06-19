@@ -3,7 +3,7 @@ p Find me in app/views/pdf/index.html.slim
 
 .image
   = image_tag "test.pdf"
-  img src="https://polar-fortress-3946.herokuapp.com/assets/stamp_pages.pdf"
+  = image_tag @pdf.template_url
 
 .links
   = link_to "New", new_pdf_path
